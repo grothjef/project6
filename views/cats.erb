@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holidays!!!</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>This Months Holidays</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Current Month</h2>
+          <ul>
+            <% @current.each do |current| %>
+              <li> <%= current[0]["name"] %> <%= current[0]["date"] %> </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <h2>May 1992</h2>
+          <ul>
+            <% @birthdays.each do |holiday| %>
+              <li> <%= holiday[0]["name"] %> <%= holiday[0]["date"] %> </li>
+            <% end %>
+          </ul>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

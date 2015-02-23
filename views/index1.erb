@@ -1,0 +1,16 @@
+
+    		<center>
+				<% @pictures.each do |pic| %>
+  				<a href="<%= pic.source_url %>" title="This cat with a hat is brought to you by The Cat API">
+    			<img src="<%= pic.url %>">
+  				</a>
+				<% end %>
+			</center>
+    		<center>
+    			<br>
+    			<br>
+    		<ul>
+  <% [ 'American Shorthair', 'Abyssynian', 'Russian Blue' ].each do |cat| %>
+    <li class="cat <%= cat.downcase.gsub(' ','-') %>"><%= cat %></li>
+  <% end %>
+</ul>
