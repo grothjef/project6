@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'holidapi'
+require 'cat_api'
 
 class MyWebApp < Sinatra::Base
 	get '/' do

@@ -20,7 +20,7 @@
           <h2>Current Month</h2>
           <ul>
             <% @current.each do |current| %>
-              <li> <%= current[0]["name"] %> <%= current[0]["date"] %> </li>
+              <li> <%= current["name"] %> </li>
             <% end %>
           </ul>
         </div>
@@ -29,7 +29,7 @@
           <h2>May 1992</h2>
           <ul>
             <% @birthdays.each do |holiday| %>
-              <li> <%= holiday[0]["name"] %> <%= holiday[0]["date"] %> </li>
+              <li> <%= holiday["name"] %> </li>
             <% end %>
           </ul>
         </div>

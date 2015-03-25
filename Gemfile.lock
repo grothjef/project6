@@ -1,12 +1,17 @@
+GIT
+  remote: git://github.com/chrisvfritz/holidapi.git
+  revision: 8c78ecce58be4b9f33c5e0d83733c3ae1e77a837
+  specs:
+    holidapi (0.0.1)
+      httparty
+      json
+
 GEM
   remote: https://rubygems.org/
   specs:
     cat_api (0.1.0)
       nokogiri (~> 1.6.5)
       rest-client (~> 1.7.2)
-    holidapi (0.0.1)
-      httparty
-      json
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -34,5 +39,6 @@ PLATFORMS
 
 DEPENDENCIES
   cat_api
-  holidapi
+  holidapi!
+  rack (= 1.5.2)
   sinatra (~> 1.4.5)
